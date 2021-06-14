@@ -1,0 +1,66 @@
+/* HEADER */
+.nav-wrapper ul a {
+   text-decoration: none;
+}
+.sidenav li a {
+   text-decoration: none;
+}
+/* Navbar */
+.container .brand-logo img {
+   width: 110px;
+   height: 110px;
+   margin-top: -25px;
+}
+.container .fitur {
+   font-family: 'Poppins';
+}
+
+/* Sidenav */
+.sidenav {
+   font-family: 'Poppins';
+}
+
+/* Galeri */
+
+.galeribu span {
+   font-family: "Sulphur Point" !important;
+
+   font-size: 40px !important;
+
+   font-weight: normal !important;
+
+}
+
+.galeribu h2 {
+   font-size: 35px !important;
+   font-weight: normal !important;
+}
+
+/* galeri kegiatan */
+
+section .judulkegiatan{
+   font-family: "Sulphur Point";
+}
+
+section .span{
+   font-size: 50px;
+}
+
+/* footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+ main {
+    flex: 1 0 auto;
+  }
+
+  .content ul a:hover {
+     color: blue !important;
+  }
+
+  footer {
+     font-family: 'Nunito';
+  }
