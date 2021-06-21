@@ -41,29 +41,38 @@
    <!-- MY CSS -->
    <link rel="stylesheet" href="<?= base_url("assets/CSS/Style.css"); ?>">
 
+   
+
    <title><?= $judul; ?></title>
 </head>
 
 <body>
    <!-- navbar -->
-   <nav class="teal accent-4">
-      <div class="container">
-         <div class="nav-wrapper">
-            <a href="<?= base_url('home'); ?>" class="brand-logo">
+      <div class="navbar-fixed ">
+         <nav class="teal accent-4">
+            <div class="container">
+               <div class="row">
+                  <div class="col m12 s12">
+                     <div class="nav-wrapper">
+                     <a href="<?= base_url('home'); ?>" class="brand-logo">
                <img src="<?= base_url('assets/img/Logo.png'); ?>" class="navbar">
             </a>
+            <span class="judulnav center">RA Bahrul Ulum</span>
 
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="fitur right hide-on-med-and-down">
-               <li><a href="<?= base_url('home'); ?>">Home</a></li>
-               <li><a href="<?= base_url('profile'); ?>">Profil</a></li>
-               <li><a href="<?= base_url('info'); ?>">Info</a></li>
-               <li><a href="<?= base_url('vpembelajaran'); ?>">Video Pembelajaran</a></li>
-               <li><a href="<?= base_url('galeri'); ?>">Galeri</a></li>
-            </ul>
-         </div>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="fitur right hide-on-med-and-down">
+                           <li><a href="<?= base_url('home'); ?>">Home</a></li>
+                           <li><a href="<?= base_url('profile'); ?>">Profil</a></li>
+                           <li><a href="<?= base_url('info'); ?>">Info</a></li>
+                           <li><a href="<?= base_url('vpembelajaran'); ?>">Video Pembelajaran</a></li>
+                           <li><a href="<?= base_url('galeri'); ?>">Galeri</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
       </div>
-   </nav>
 
    <!-- sidenav -->
    <ul class="sidenav" id="mobile-nav">

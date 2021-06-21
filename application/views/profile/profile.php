@@ -1,16 +1,23 @@
 <!-- Sejarah Sekolah -->
 <section id="sejarah" class="sejarah">
-   <div class="container">
-      <div class="judul-sejarah">
-         <h4 class="center teal-text judul">Profil Sekolah</h4>
-         <h5 class="center judul">RA Bahrul Ulum</h5>
-         <hr>
-      </div>
-      <div class="content">
-         <?php foreach ($profil as $p) : ?>
-            <p><?= $p['profil']; ?></p>
-         <?php endforeach; ?>
-      </div>
+   <div class="container" style="width:100%">
+      <div class="row">
+         <div class="col m6 s12 center">
+            <div class="fotoprofil"><img style="width: 400px;"  src="<?= base_url('assets/img/galeri/pelatihanguru2.png') ?>" alt="" width="300" class="center"></div>
+         </div>
+         <div class="col m6 s12">
+            <div class="judul-sejarah">
+               <h4 class="center teal-text judul">Profil Sekolah</h4>
+               <h5 class="center judul">RA Bahrul Ulum</h5>
+               <hr>
+            </div>
+            <div class="content">
+               <?php foreach ($profil as $p) : ?>
+                  <p><?= $p['profil']; ?></p>
+               <?php endforeach; ?>
+            </div>
+         </div>   
+      </div>     
    </div>
 </section>
 

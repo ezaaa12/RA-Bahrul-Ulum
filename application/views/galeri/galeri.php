@@ -40,20 +40,13 @@
    <link rel="stylesheet" href="<?= base_url('assets/CSS/galeri.css'); ?>">
 
    <!-- Citylink Css -->
-   <link rel="stylesheet" href="<?= base_url('assets/CSS/css/style.css'); ?>">
-   <link rel="stylesheet" href="<?= base_url('assets/CSS/squarestyle.css'); ?>">
+   <link rel="stylesheet" href="<?= base_url('assets/CSS/city.css'); ?>">
 
-   <!-- Square CSS -->
+    <!-- lightbox -->
+    <link rel="stylesheet" href="<?= base_url('assets/CSS/cn.css'); ?>">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-   <link rel="stylesheet" href="<?= base_url('assets/CSS/squarecss/animate.css'); ?>">
 
-   <link rel="stylesheet" href="<?= base_url('assets/CSS/squarecss/owl.carousel.min.css'); ?>">
-
-   <link rel="stylesheet" href="<?= base_url('assets/CSS/squarecss/magnific-popup.css'); ?>">
-
-   <link rel="stylesheet" href="<?= base_url('assets/CSS/squarecss/flaticon.css'); ?>">
-   <link rel="stylesheet" href="<?= base_url('assets/CSS/squarecss/icomoon.css'); ?>">
-   <link rel="stylesheet" href="<?= base_url('assets/CSS/squarecss/style.css'); ?>">
 
    <title><?= $judul; ?></title>
 </head>
@@ -66,6 +59,7 @@
             <a href="<?= base_url('home'); ?>" class="brand-logo">
                <img src="<?= base_url('assets/img/Logo.png'); ?>" class="navbar">
             </a>
+            <span class="judulnav center">RA Bahrul Ulum</span>
             <!-- <span class="center">RA Bahrul Ulum </span> -->
             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="fitur right hide-on-med-and-down">
@@ -90,47 +84,81 @@
 
    <!-- Galeri Kegiatan -->
 
-   <section class="ftco-section ftco-project bg-light" data-section="projects galerikegiatan">
-      <div class="container-fluid px-md-5 ">
-         <div class="row justify-content-center ">
-            <div class="col-md-12 heading-section text-center ftco-animate">
-               <h2 class=" span judulkegiatan teal-text">Galeri Kegiatan</h2>
-               <h2 class="mb-4 judulkegiatan ">RA Bahrul Ulum</h2>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-12 testimonial">
-               <div class="carousel-project owl-carousel">
-                  <div class="item">
-                     <div class="project">
-                        <div class="img">
-                           <img src="<?= base_url('assets/img/galeri/project-1.jpg'); ?>" class="img-fluid" alt="Colorlib Template">
-                           <a href="<?= base_url('assets/img/galeri/project-1.jpg'); ?>" class="icon image-popup d-flex justify-content-center align-items-center">
-                              <span class="icon-expand"></span>
-                           </a>
-                        </div>
-                        <div class="text px-4">
-                           <h3><a href="#">Office Interior Design</a></h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item">
-                     <div class="project">
-                        <div class="img">
-                           <img src="<?= base_url('assets/img/galeri/project-2.jpg'); ?>" class="img-fluid" alt="Colorlib Template">
-                           <a href="image/project-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                              <span class="icon-expand"></span>
-                           </a>
-                        </div>
-                        <div class="text px-4">
-                           <h3><a href="#">Office Interior Design</a></h3>
-                        </div>
-                     </div>
-                  </div>
+   
+   <div class="popular-location galerikegiatan ">
+       <div class="row galeribu center">
+                    <span class="teal-text">Galeri</span>
+                   <h2>RA Bahrul Ulum</h2>
+       </div>
+       <div class="row">
+           <div class="col-lg-4 col-md-6 col-sm-6">
+               <div class="single-location mb-30">
+                   <div class="location-img">
+                       <img src="<?= base_url('assets/img/galeri/duha1.png') ?>" alt="">
+                   </div>
+                   <div class="location-details">
+                       <p>Sholat Duha Bersama</p>
+                       <a href="<?= base_url('galeri/kegduha') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                   </div>
                </div>
-            </div>
-         </div>
-   </section>
+           </div>
+           <div class="col-lg-4 col-md-6 col-sm-6">
+               <div class="single-location mb-30">
+                   <div class="location-img">
+                       <img src="<?= base_url('assets/img/galeri/manasik1.jpg') ?>" alt="">
+                   </div>
+                   <div class="location-details">
+                       <p>Manasik Haji</p>
+                       <a href="<?= base_url('galeri/kegmanasik') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-4 col-md-6 col-sm-6">
+               <div class="single-location mb-30">
+                   <div class="location-img">
+                       <img src="<?= base_url('assets/img/galeri/membatik1.jpg') ?>" alt="">
+                   </div>
+                   <div class="location-details">
+                       <p>Membatik</p>
+                       <a href="<?= base_url('galeri/kegmembatik') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-4 col-md-6 col-sm-6">
+               <div class="single-location mb-30">
+                   <div class="location-img">
+                       <img src="<?= base_url('assets/img/galeri/pensi1.png') ?>" alt="">
+                   </div>
+                   <div class="location-details">
+                       <p>Pentas Seni</p>
+                       <a href="<?= base_url('galeri/kegpensi') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-4 col-md-6 col-sm-6">
+               <div class="single-location mb-30">
+                   <div class="location-img">
+                       <img src="<?= base_url('assets/img/galeri/kartini1.png') ?>" alt="">
+                   </div>
+                   <div class="location-details">
+                       <p>Kartini</p>
+                       <a href="<?= base_url('galeri/kegkartini') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-4 col-md-6 col-sm-6">
+               <div class="single-location mb-30">
+                   <div class="location-img">
+                       <img src="<?= base_url('assets/img/galeri/porsenisenam1.png') ?>" alt="">
+                   </div>
+                   <div class="location-details">
+                       <p>Porseni</p>
+                       <a href="<?= base_url('galeri/kegporseni') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                   </div>
+               </div>
+           </div> 
+       </div>
+</div>
 
 
    <!-- End -->
@@ -191,15 +219,7 @@
       M.Materialbox.init(materialbox);
    </script>
 
-   <script src="<?= base_url('assets/js/js/jquery.min.js'); ?>"></script>
-   <script src="<?= base_url('assets/js/js/jquery-migrate-3.0.1.min.js'); ?>"></script>
-   <script src="<?= base_url('assets/js/js/jquery.waypoints.min.js'); ?>"></script>
-   <script src="<?= base_url('assets/js/js/jquery.stellar.min.js'); ?>"></script>
-   <script src="<?= base_url('assets/js/js/owl.carousel.min.js'); ?>"></script>
-   <script src="<?= base_url('assets/js/js/jquery.magnific-popup.min.js'); ?>"></script>
-   <script src="<?= base_url('assets/js/js/aos.js'); ?>"></script>
-   <script src="<?= base_url('assets/js/js/scrollax.min.js'); ?>"></script>
-   <script src="<?= base_url('assets/js/js/main.js'); ?>"></script>
+ 
 
 
 </body>
