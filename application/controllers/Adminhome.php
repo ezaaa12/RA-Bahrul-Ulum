@@ -9,20 +9,6 @@ class Adminhome extends CI_Controller
       $this->load->model('Home_model');
    }
 
-
-   //SLIDER
-   public function index()
-   {
-      $data['title'] = 'Slider';
-      $data['user'] = $this->db->get_where('table_user', ['email' => $this->session->userdata('email')])->row_array();
-
-      $this->load->view('templates/header-admin', $data);
-      $this->load->view('templates/sidebar-admin', $data);
-      $this->load->view('templates/topbar-admin', $data);
-      $this->load->view('admin/home/slider', $data);
-      $this->load->view('templates/footer-admin');
-   }
-
    //KEGIATAN TERBARU
    public function kegiatanterbaru()
    {
