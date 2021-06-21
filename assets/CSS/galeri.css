@@ -15,6 +15,13 @@
    font-family: 'Poppins';
 }
 
+.judulnav {
+   font-size: 24px;
+   margin-left: 100px;
+   font-family: 'Sulphur Point';
+   font-weight: 700;
+}
+
 /* Sidenav */
 .sidenav {
    font-family: 'Poppins';
@@ -38,13 +45,40 @@
 
 /* galeri kegiatan */
 
+.box .gallery img  {
+   
+}
+
 section .judulkegiatan{
    font-family: "Sulphur Point";
 }
 
-section .span{
-   font-size: 50px;
+.galerikegiatan span {
+   font-size: 40px;
+   padding-top: 40px !important;
 }
+
+.galerikegiatan h2 {
+   font-size: 35px;
+}
+
+.galerikegiatan2 {
+   font-size: 40px;
+   padding-top: 40px !important;
+}
+
+.galerikegiatan2 h2 {
+   font-size: 35px;
+}
+
+
+
+.galerikegiatan .gallery  {
+   filter: drop-shadow(0px 0px 1px black) !important;
+}
+
+
+
 
 /* footer */
 body {
