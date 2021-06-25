@@ -36,8 +36,8 @@
                      <td><?= $am['email']; ?></td>
                      <td><?= $am['password']; ?></td>
                      <td>
-                        <a href="<?= base_url('adminkelola/ubahadmin/') . $am['id']; ?>" class=" badge badge-success">ubah</a>
-                        <a href="<?= base_url('adminkelola/hapusadmin/') . $am['id']; ?>" class=" badge badge-danger" onclick="return confirm('hapus?')">hapus</a>
+                        <a href="<?= base_url('adminkelola/ubahadmin/') . $am['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
+                        <a href="<?= base_url('adminkelola/hapusadmin/') . $am['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')"><i class="far fa-trash-alt"></i></a>
                      </td>
                   </tr>
                   <?php $i++; ?>

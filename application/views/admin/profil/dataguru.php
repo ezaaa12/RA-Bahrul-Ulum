@@ -36,8 +36,8 @@
                      <td><?= $dg['nama']; ?></td>
                      <td><?= $dg['jabatan']; ?></td>
                      <td>
-                        <a href=" <?= base_url('adminprofil/ubahdataguru/') . $dg['id']; ?>" class=" badge badge-success">ubah</a>
-                        <a href="<?= base_url('adminprofil/hapusdataguru/') . $dg['id']; ?>" class=" badge badge-danger" onclick="return confirm('hapus?')">hapus</a>
+                        <a href=" <?= base_url('adminprofil/ubahdataguru/') . $dg['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
+                        <a href="<?= base_url('adminprofil/hapusdataguru/') . $dg['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')"><i class="far fa-trash-alt"></i></a>
                      </td>
                   </tr>
                   <?php $i++; ?>

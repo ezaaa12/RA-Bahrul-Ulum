@@ -34,8 +34,8 @@
                      <td><?= $v['tittle']; ?></td>
                      <td><?= $v['link']; ?></td>
                      <td>
-                        <a href=" <?= base_url('adminvideo/ubahvideo/') . $v['id']; ?>" class=" badge badge-success">ubah</a>
-                        <a href="<?= base_url('adminvideo/hapusvideo/') . $v['id']; ?>" class=" badge badge-danger" onclick="return confirm('hapus?')">hapus</a>
+                        <a href=" <?= base_url('adminvideo/ubahvideo/') . $v['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
+                        <a href="<?= base_url('adminvideo/hapusvideo/') . $v['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')"><i class="far fa-trash-alt"></i></a>
                      </td>
                   </tr>
                   <?php $i++; ?>

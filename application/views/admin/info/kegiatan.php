@@ -24,8 +24,8 @@
                      <img src="<?= base_url('assets/img/info/kegiatan/') ?><?= $kg['gambar']; ?>" width=" 30" height="130" class="card-img-top">
                      <div class="card-body">
                         <h5 class="card-title"><?= $kg['kegiatan']; ?></h5>
-                        <a href=" <?= base_url('admininfo/ubahkegiatan/') . $kg['id']; ?>" class=" badge badge-success">ubah</a>
-                        <a href="<?= base_url('admininfo/hapuskegiatan/') . $kg['id']; ?>" class=" badge badge-danger" onclick="return confirm('hapus?')">hapus</a>
+                        <a href=" <?= base_url('admininfo/ubahkegiatan/') . $kg['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
+                        <a href="<?= base_url('admininfo/hapuskegiatan/') . $kg['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')"><i class="far fa-trash-alt"></i></a>
                      </div>
 
                   </div>

@@ -5,10 +5,10 @@
    <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
 
    <div class="row">
-      <div class="col-lg-6">
+      <div class="col-sm-2">
          <div class="dropdown">
             <button class="btn btn-gradinet dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#00bfa5; color:white;">
-               Sarana dan Fasilitas
+               Sarana & Fasilitas
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                <a class="dropdown-item" href="<?= base_url('admininfo/fasilitas') ?>">Fasilitas Sekolah</a>
@@ -16,9 +16,13 @@
             </div>
          </div>
       </div>
+
+      <div class="col-sm-2">
+         <a href="" class="btn btn-gradient mb-3" data-toggle="modal" data-target="#newFasilitasModal" style="background-color:#00bfa5; color:white; margin-top:1px;">Tambah Fasilitas</a>
+      </div>
    </div>
 
-   <a href="" class="btn btn-gradient mb-3" data-toggle="modal" data-target="#newFasilitasModal" style="background-color:#00bfa5; color:white; margin-top:20px;">Tambah Fasilitas Sekolah</a>
+
 
    <?php if (validation_errors()) : ?>
       <div class="alert alert-danger" role="alert">
@@ -34,8 +38,8 @@
             <div class="card" style="width: 10rem; text-align: center; margin-top:20px;">
                <img src="<?= base_url('assets/img/info/fasilitassekolah/') ?><?= $f['gambar']; ?>" width=" 30" height="130" class="card-img-top">
                <div class="card-body">
-                  <a href=" <?= base_url('admininfo/ubahfasilitas/') . $f['id']; ?>" class=" badge badge-success">ubah</a>
-                  <a href="<?= base_url('admininfo/hapusfasilitas/') . $f['id']; ?>" class=" badge badge-danger" onclick="return confirm('hapus?')">hapus</a>
+                  <a href=" <?= base_url('admininfo/ubahfasilitas/') . $f['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
+                  <a href="<?= base_url('admininfo/hapusfasilitas/') . $f['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')"><i class="far fa-trash-alt"></i></a>
                </div>
 
             </div>

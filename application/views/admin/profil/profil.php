@@ -29,7 +29,7 @@
                      <th scope="row"><?= $i; ?></th>
                      <td><?= $p['profil']; ?></td>
                      <td>
-                        <a href=" <?= base_url('adminprofil/ubahprofil/') . $p['id']; ?>" class=" badge badge-success">ubah</a>
+                        <a href=" <?= base_url('adminprofil/ubahprofil/') . $p['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
                      </td>
                   </tr>
                   <?php $i++; ?>

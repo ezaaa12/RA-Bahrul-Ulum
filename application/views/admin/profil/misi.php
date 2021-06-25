@@ -7,7 +7,7 @@
    <a href="" class="btn btn-gradient mb-3" data-toggle="modal" data-target="#newMisiModal" style="background-color:#00bfa5; color:white;">Tambah Misi</a>
 
    <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg">
 
          <?php if (validation_errors()) : ?>
             <div class="alert alert-danger" role="alert">
@@ -32,8 +32,8 @@
                      <th scope="row"><?= $i; ?></th>
                      <td><?= $m['misi']; ?></td>
                      <td>
-                        <a href=" <?= base_url('adminprofil/ubahmisi/') . $m['id']; ?>" class=" badge badge-success">ubah</a>
-                        <a href="<?= base_url('adminprofil/hapusmisi/') . $m['id']; ?>" class=" badge badge-danger" onclick="return confirm('hapus?')">hapus</a>
+                        <a href=" <?= base_url('adminprofil/ubahmisi/') . $m['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
+                        <a href="<?= base_url('adminprofil/hapusmisi/') . $m['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')"><i class="far fa-trash-alt"></i></a>
                      </td>
                   </tr>
                   <?php $i++; ?>

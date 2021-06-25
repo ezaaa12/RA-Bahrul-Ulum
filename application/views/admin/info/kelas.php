@@ -26,8 +26,8 @@
                      <div class="card-body">
                         <h5 class="card-title"><?= $k['kelas']; ?></h5>
                         <p><?= $k['keterangan']; ?></p>
-                        <a href=" <?= base_url('admininfo/ubahdatakelas/') . $k['id']; ?>" class=" badge badge-success">ubah</a>
-                        <a href="<?= base_url('admininfo/hapusdatakelas/') . $k['id']; ?>" class=" badge badge-danger" onclick="return confirm('hapus?')">hapus</a>
+                        <a href=" <?= base_url('admininfo/ubahdatakelas/') . $k['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
+                        <a href="<?= base_url('admininfo/hapusdatakelas/') . $k['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')"><i class="far fa-trash-alt"></i></a>
                      </div>
 
                   </div>

@@ -5,30 +5,25 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Galeri_model extends CI_Model
 {
 
-   //KATEGORI
-   public function getDataKategori()
+   //Galeri Internal
+   public function getGInternal()
    {
-      return $this->db->get('table_kategori')->result_array();
+      return $this->db->get('table_galinternal')->result_array();
    }
 
-   public function getKategoriById($id)
+   public function getGInternalById($id)
    {
-      return $this->db->get_where('table_kategori', ['id' => $id])->row_array();
+      return $this->db->get_where('table_galinternal', ['id' => $id])->row_array();
    }
 
-   public function hapusKategori($id)
+   //Galeri Eksternal
+   public function getGEksternal()
    {
-      $this->db->where('id', $id);
-      $this->db->delete('table_kategori');
+      return $this->db->get('table_galeksternal')->result_array();
    }
 
-   public function ubahDataKategori()
+   public function getGEksternalById($id)
    {
-      $data = [
-         'kategori' => $this->input->post('kategori')
-      ];
-
-      $this->db->where('id', $this->input->post('id'));
-      $this->db->update('table_kategori', $data);
+      return $this->db->get_where('table_galeksternal', ['id' => $id])->row_array();
    }
 }
