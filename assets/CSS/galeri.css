@@ -96,5 +96,10 @@ body {
   }
 
   footer {
-     font-family: 'Nunito';
+     font-family: 'Nunito' !important;
   }
+
+  footer .footer-copyrigth {
+   font-family: 'Nunito' !important;
+}
+

@@ -38,6 +38,7 @@
 
    <!-- MY CSS -->
    <link rel="stylesheet" href="<?= base_url('assets/CSS/galeri.css'); ?>">
+   <link rel="stylesheet" href="<?= base_url("assets/CSS/Style.css"); ?>">
 
    <!-- Citylink Css -->
    <link rel="stylesheet" href="<?= base_url('assets/CSS/city.css'); ?>">
@@ -90,74 +91,33 @@
                     <span class="teal-text">Galeri</span>
                    <h2>RA Bahrul Ulum</h2>
        </div>
-       <div class="row">
-           <div class="col-lg-4 col-md-6 col-sm-6">
-               <div class="single-location mb-30">
-                   <div class="location-img">
-                       <img src="<?= base_url('assets/img/galeri/duha1.png') ?>" alt="">
-                   </div>
-                   <div class="location-details">
-                       <p>Sholat Duha Bersama</p>
-                       <a href="<?= base_url('galeri/kegduha') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col-lg-4 col-md-6 col-sm-6">
-               <div class="single-location mb-30">
-                   <div class="location-img">
-                       <img src="<?= base_url('assets/img/galeri/manasik1.jpg') ?>" alt="">
-                   </div>
-                   <div class="location-details">
-                       <p>Manasik Haji</p>
-                       <a href="<?= base_url('galeri/kegmanasik') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col-lg-4 col-md-6 col-sm-6">
-               <div class="single-location mb-30">
-                   <div class="location-img">
-                       <img src="<?= base_url('assets/img/galeri/membatik1.jpg') ?>" alt="">
-                   </div>
-                   <div class="location-details">
-                       <p>Membatik</p>
-                       <a href="<?= base_url('galeri/kegmembatik') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col-lg-4 col-md-6 col-sm-6">
-               <div class="single-location mb-30">
-                   <div class="location-img">
-                       <img src="<?= base_url('assets/img/galeri/pensi1.png') ?>" alt="">
-                   </div>
-                   <div class="location-details">
-                       <p>Pentas Seni</p>
-                       <a href="<?= base_url('galeri/kegpensi') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col-lg-4 col-md-6 col-sm-6">
-               <div class="single-location mb-30">
-                   <div class="location-img">
-                       <img src="<?= base_url('assets/img/galeri/kartini1.png') ?>" alt="">
-                   </div>
-                   <div class="location-details">
-                       <p>Kartini</p>
-                       <a href="<?= base_url('galeri/kegkartini') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
-                   </div>
-               </div>
-           </div>
-           <div class="col-lg-4 col-md-6 col-sm-6">
-               <div class="single-location mb-30">
-                   <div class="location-img">
-                       <img src="<?= base_url('assets/img/galeri/porsenisenam1.png') ?>" alt="">
-                   </div>
-                   <div class="location-details">
-                       <p>Porseni</p>
-                       <a href="<?= base_url('galeri/kegporseni') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
-                   </div>
-               </div>
-           </div> 
-       </div>
+
+       <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-location mb-30">
+                        <div class="location-img">
+                            <img src="<?= base_url('assets/img/galeri/duha1.png') ?>" alt="">
+                        </div>
+                        <div class="location-details">
+                            <p>Sholat Duha Bersama</p>
+                            <a href="<?= base_url('galeri/kegduha') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-location mb-30">
+                        <div class="location-img">
+                            <img src="<?= base_url('assets/img/galeri/manasik1.jpg') ?>" alt="">
+                        </div>
+                        <div class="location-details">
+                            <p>Manasik Haji</p>
+                            <a href="<?= base_url('galeri/kegmanasik') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
 </div>
 
 
@@ -196,7 +156,7 @@
          </div>
       </div>
       <div class="footer-copyright">
-         <div class="container center textcopy white-text" style="padding: 20px;">
+         <div class="container center textcopy white-text" style="padding: 20px;"> 
             © 2021 Copyright RA Bahrul Ulum
          </div>
       </div>

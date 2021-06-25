@@ -458,5 +458,9 @@ body {
   footer {
      font-family: 'Nunito';
   }
+  
+  footer .footer-copyrigth {
+   font-family: 'Nunito' !important;
+}
 
  
