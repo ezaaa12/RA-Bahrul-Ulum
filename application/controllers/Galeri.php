@@ -2,6 +2,13 @@
 
 class Galeri extends CI_Controller
 {
+
+   public function __construct()
+   {
+      parent::__construct();
+      $this->load->model('Galeri_model');
+   }
+
    public function index()
    {
 
@@ -10,52 +17,21 @@ class Galeri extends CI_Controller
       $this->load->view('galeri/galeri', $data);
    }
 
-   public function kegduha()
+   public function keginternal()
    {
 
       $data['judul'] = 'Galeri';
+      $data['galeri'] = $this->Galeri_model->getGInternal();
 
-      $this->load->view('galeri/duha', $data);
+      $this->load->view('galeri/internal', $data);
    }
 
-   public function kegmanasik()
+   public function kegeksternal()
    {
 
       $data['judul'] = 'Galeri';
+      $data['galeri'] = $this->Galeri_model->getGEksternal();
 
-      $this->load->view('galeri/manasik', $data);
+      $this->load->view('galeri/eksternal', $data);
    }
-
-   public function kegmembatik()
-   {
-
-      $data['judul'] = 'Galeri';
-
-      $this->load->view('galeri/membatik', $data);
-   }
-
-   public function kegpensi()
-   {
-
-      $data['judul'] = 'Galeri';
-
-      $this->load->view('galeri/pensi', $data);
-   }
-
-   public function kegkartini()
-   {
-
-      $data['judul'] = 'Galeri';
-
-      $this->load->view('galeri/kartini', $data);
-   }
-
-   public function kegporseni()
-   {
-
-      $data['judul'] = 'Galeri';
-
-      $this->load->view('galeri/porseni', $data);
-   }
-   
 }

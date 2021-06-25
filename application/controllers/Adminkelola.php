@@ -12,7 +12,7 @@ class Adminkelola extends CI_Controller
 
    public function kelolaadmin()
    {
-      $data['title'] = 'Kelola Admin';
+      $data['title'] = 'Managemet User';
       $data['user'] = $this->db->get_where('table_user', ['email' => $this->session->userdata('email')])->row_array();
 
       $data['admin'] = $this->Admin_model->getDataAdmin();

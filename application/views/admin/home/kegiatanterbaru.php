@@ -19,14 +19,14 @@
          <div class="row">
             <?php $i = 1; ?>
             <?php foreach ($kegiatan as $kg) : ?>
-               <div class="col-sm-4">
-                  <div class="card" style="width: 20rem; text-align: center; margin-top:20px;">
+               <div class="col-sm-3">
+                  <div class="card" style="width: 19rem; text-align: center; margin-top:20px;">
                      <img src="<?= base_url('assets/img/menu/kegiatan/') ?><?= $kg['gambar']; ?>" width=" 30" height="175" class="card-img-top">
                      <div class="card-body">
                         <h5 class="card-title"><?= $kg['kegiatan']; ?></h5>
                         <p><?= $kg['tanggal']; ?></p>
-                        <a href=" <?= base_url('adminhome/ubahkegiatan/') . $kg['id']; ?>" class=" badge badge-success">ubah</a>
-                        <a href="<?= base_url('adminhome/hapuskegiatan/') . $kg['id']; ?>" class=" badge badge-danger" onclick="return confirm('hapus?')">hapus</a>
+                        <a href=" <?= base_url('adminhome/ubahkegiatan/') . $kg['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
+                        <a href="<?= base_url('adminhome/hapuskegiatan/') . $kg['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')"><i class="far fa-trash-alt"></i></a>
                      </div>
 
                   </div>

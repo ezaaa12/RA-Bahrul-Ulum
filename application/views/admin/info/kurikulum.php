@@ -28,7 +28,7 @@
                      <th scope="row"><?= $i; ?></th>
                      <td><?= $k['kurikulum']; ?></td>
                      <td>
-                        <a href=" <?= base_url('admininfo/ubahkurikulum/') . $k['id']; ?>" class=" badge badge-success">ubah</a>
+                        <a href=" <?= base_url('admininfo/ubahkurikulum/') . $k['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
                      </td>
                   </tr>
                   <?php $i++; ?>

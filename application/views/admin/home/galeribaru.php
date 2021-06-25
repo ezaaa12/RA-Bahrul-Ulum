@@ -22,11 +22,11 @@
                <div class="col-sm-2">
                   <div class="card" style="width: 10rem; text-align: center; margin-top:20px;">
                      <div class="gambar">
-                        <img src="<?= base_url('assets/img/menu/galeri/') ?><?= $g['gambar']; ?>" width=" 30" height="130" class="card-img-top">
+                        <img src="<?= base_url('assets/img/menu/galeri/') ?><?= $g['gambar']; ?>" width=" 30" height="130" class="card-img-top" style="margin-bottom: 10px;">
                      </div>
-                     <div class="foot">
-                        <a href=" <?= base_url('adminhome/ubahgaleri/') . $g['id']; ?>" class=" badge badge-success">ubah</a>
-                        <a href="<?= base_url('adminhome/hapusgaleri/') . $g['id']; ?>" class=" badge badge-danger" onclick="return confirm('hapus?')">hapus</a>
+                     <div class=" foot">
+                        <a href=" <?= base_url('adminhome/ubahgaleri/') . $g['id']; ?>" class=" btn btn-success" style="margin-bottom: 10px;"><i class="far fa-edit"></i></a>
+                        <a href="<?= base_url('adminhome/hapusgaleri/') . $g['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')" style="margin-bottom: 10px;"><i class="far fa-trash-alt"></i></a>
                      </div>
                   </div>
                </div>

@@ -9,66 +9,75 @@
       <div class="sidebar-brand-text">RA Bahrul Ulum</div>
    </a>
 
-
-   <!-- Garis -->
+   <!-- Dashboard -->
    <hr class="sidebar-divider">
-   <!-- Query Menu -->
+   <li class="nav-item">
+      <a class="nav-link" href="<?= base_url('admin') ?>">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Dashboard</span></a>
+   </li>
+
+
+
+   <hr class="sidebar-divider">
+
+   <!-- Query Submenu2 -->
    <?php
-   $queryMenu = "SELECT *
-               FROM `table_menu`
-               ORDER BY `table_menu`.`id` ASC";
-   $menu = $this->db->query($queryMenu)->result_array();
+   $querysubmneu = "SELECT *
+               FROM `table_submenu`
+               ORDER BY `table_submenu`.`id` ASC";
+   $submenu = $this->db->query($querysubmneu)->result_array();
    ?>
 
-   <!-- Looping Menu -->
-   <?php foreach ($menu as $m) : ?>
-      <!-- Judul -->
-      <div class="sidebar-heading">
-         <?= $m['menu']; ?>
+   <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+         <i class="fas fa-fw fa-folder"></i>
+         <span>Management Menu</span>
+      </a>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+         <div class="bg-white py-2 collapse-inner rounded">
+            <?php foreach ($submenu as $sm) : ?>
+               <a class="collapse-item" href="<?= base_url($sm['url']); ?>"><?= $sm['keterangan']; ?></a>
+            <?php endforeach; ?>
+         </div>
       </div>
+   </li>
 
+   <!-- Query Submenu1 -->
+   <?php
+   $querysubmneu1 = "SELECT *
+               FROM `table_submenu1`
+               ORDER BY `table_submenu1`.`id` ASC";
+   $submenu1 = $this->db->query($querysubmneu1)->result_array();
+   ?>
 
-      <!-- submenu sesuai menu -->
-      <?php
-      $menuId = $m['id'];
-      $querySubMenu = "SELECT * 
-               FROM `table_submenu` JOIN `table_menu` 
-               ON `table_submenu`.`menu_id` = `table_menu`.`id`
-               WHERE `table_submenu`.`menu_id` = $menuId
-            ";
+   <!-- Submenu1 -->
 
-      $subMenu = $this->db->query($querySubMenu)->result_array();
-      ?>
-
-      <?php foreach ($subMenu as $sm) : ?>
-         <?php if ($title == $sm['title']) : ?>
-            <li class="nav-item active">
-            <?php else : ?>
-            <li class="nav-item">
-            <?php endif; ?>
-            <a class="nav-link pb-0" href="<?= base_url($sm['url']); ?>">
-               <i class="<?= $sm['icon']; ?>"></i>
-               <span><?= $sm['title']; ?></span></a>
-            </li>
-         <?php endforeach; ?>
-         <!-- garis -->
-         <hr class="sidebar-divider mt-3">
-      <?php endforeach; ?>
-
-      <!-- Logout -->
+   <?php foreach ($submenu1 as $sm1) : ?>
+      <hr class="sidebar-divider">
       <li class="nav-item">
-         <a class="nav-link" href="<?= base_url('login/logout'); ?>">
-            <i class="fas fa-fw fa-sign-out-alt"></i>
-            <span>Logout</span></a>
+         <a class="nav-link" href="<?= base_url($sm1['url']); ?>">
+            <i class=" <?= $sm1['ikon']; ?>"></i>
+            <span><?= $sm1['keterangan']; ?></span></a>
       </li>
-      <!-- garis -->
-      <hr class="sidebar-divider d-none d-md-block">
+   <?php endforeach; ?>
 
 
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-         <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
+   <!-- Logout -->
+   <hr class="sidebar-divider">
+   <li class="nav-item">
+      <a class="nav-link" href="<?= base_url('login/logout'); ?>">
+         <i class="fas fa-fw fa-sign-out-alt"></i>
+         <span>Logout</span></a>
+   </li>
+   <!-- garis -->
+   <hr class="sidebar-divider d-none d-md-block">
+
+
+   <!-- Sidebar Toggler (Sidebar) -->
+   <div class="text-center d-none d-md-inline">
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
+   </div>
 
 </ul>
 <!-- End of Sidebar -->
