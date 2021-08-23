@@ -16,29 +16,39 @@
                </div>
             </div>
             <div class="form-group row">
-               <label for="nama" class="col-sm-2 col-form-label">TTL</label>
+               <label for="tempat" class="col-sm-2 col-form-label">Tempat Lahir</label>
                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="ttl" name="ttl" value="<?= $siswa['ttl']; ?>">
+                  <input type="text" class="form-control" id="tempat" name="tempat" value="<?= $siswa['tempat']; ?>">
                </div>
             </div>
+            <div class="form-group row">
+               <label for="ttl" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+               <div class="col-sm-10">
+                  <input type="text" class="form-control datepicker" id="ttl" name="ttl" value="<?= $siswa['ttl']; ?>">
+               </div>
+            </div>
+
             <div class="form-group row">
                <label for="jk" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="jk" name="jk" value="<?= $siswa['jk']; ?>">
+                  <div class="form-check">
+                     <?php foreach ($jk as $jk) : ?>
+                        <?php if ($jk == $siswa['jk']) : ?>
+                           <input class="form-check-input" type="radio" name="jk" id="jk" value="<?= $jk; ?>" style="margin-left: 1px;" checked>
+                           <label class="form-check-label" for="jk" style="margin-left: 20px;">
+                              <?= $jk; ?>
+                           </label>
+                        <?php else : ?>
+                           <input class="form-check-input" type="radio" name="jk" id="jk" value="<?= $jk; ?>" style="margin-left: 1px;">
+                           <label class="form-check-label" for="jk" style="margin-left: 20px;">
+                              <?= $jk; ?>
+                           </label>
+                        <?php endif; ?>
+                     <?php endforeach; ?>
+                  </div>
                </div>
             </div>
-            <div class="form-group row">
-               <label for="kelompok" class="col-sm-2 col-form-label">Kelompok</label>
-               <div class="col-sm-10">
-                  <input type="text" class="form-control" id="kelompok" name="kelompok" value="<?= $siswa['kelompok']; ?>">
-               </div>
-            </div>
-            <div class="form-group row">
-               <label for="status" class="col-sm-2 col-form-label">Status</label>
-               <div class="col-sm-10">
-                  <input type="text" class="form-control" id="status" name="status" value="<?= $siswa['status']; ?>">
-               </div>
-            </div>
+
             <div class="form-group row">
                <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
                <div class="col-sm-10">
@@ -57,10 +67,21 @@
                   <input type="text" class="form-control" id="ibu" name="ibu" value="<?= $siswa['ibu']; ?>">
                </div>
             </div>
+
             <div class="form-group row">
                <label for="thnajaran" class="col-sm-2 col-form-label">Tahun Ajaran</label>
-               <div class="col-sm-10">
-                  <input type="text" class="form-control" id="thnajaran" name="thnajaran" value="<?= $siswa['thnajaran']; ?>">
+               <div class=" col-sm-10">
+                  <select id="thnajaran" name="thnajaran" class="form-control">
+                     <?php foreach ($thnajaran as $thn) : ?>
+                        <div class="col-sm-10">
+                           <?php if ($thn['thnajaran'] == $siswa['thnajaran']) : ?>
+                              <option value="<?= $thn['thnajaran']; ?>" selected><?= $thn['thnajaran']; ?></option>
+                           <?php else : ?>
+                              <option value="<?= $thn['thnajaran']; ?>"><?= $thn['thnajaran']; ?></option>
+                           <?php endif; ?>
+                        </div>
+                     <?php endforeach; ?>
+                  </select>
                </div>
             </div>
 

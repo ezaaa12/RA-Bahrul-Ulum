@@ -50,6 +50,9 @@
 
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
+<!-- datepicker -->
+<script src="<?= base_url('assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js'); ?>"></script>
+<script src="<?= base_url('assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.min.js'); ?>"></script>
 
 <script>
    //untuk gambar
@@ -57,6 +60,16 @@
       let fileName = $(this).val().split('\\').pop();
       $(this).next('.custom-file-label').addClass("selected").html(fileName);
 
+   });
+
+   $(function(a) {
+      $('.datepicker').datepicker({
+         format: 'dd MM yyyy',
+         endDate: '0d',
+         language: 'id',
+         autoclose: true,
+         todayHighlight: true,
+      });
    });
 </script>
 

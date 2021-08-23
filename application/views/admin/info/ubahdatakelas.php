@@ -9,10 +9,21 @@
 
          <form action="" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?= $kelas['id']; ?>">
+
             <div class="form-group row">
                <label for="kelas" class="col-sm-2 col-form-label">Kelas</label>
                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="kelas" name="kelas" value="<?= $kelas['kelas']; ?>">
+                  <select id="kelas" name="kelas" class="form-control">
+                     <?php foreach ($kls as $k) : ?>
+                        <div class="col-sm-10">
+                           <?php if ($k == $kelas['kelas']) : ?>
+                              <option value="<?= $k ?>" selected><?= $k ?></option>
+                           <?php else : ?>
+                              <option value="<?= $k ?>"><?= $k ?></option>
+                           <?php endif; ?>
+                        </div>
+                     <?php endforeach; ?>
+                  </select>
                </div>
             </div>
 

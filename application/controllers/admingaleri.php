@@ -6,7 +6,11 @@ class Admingaleri extends CI_Controller
    {
       parent::__construct();
       is_logged_in();
+
       $this->load->model('Galeri_model');
+
+      //Pagination
+      $this->load->library('pagination');
    }
 
    //galeri internal
@@ -15,7 +19,47 @@ class Admingaleri extends CI_Controller
       $data['title'] = 'Galeri Kegiatan Internal';
       $data['user'] = $this->db->get_where('table_user', ['email' => $this->session->userdata('email')])->row_array();
 
-      $data['galeri'] = $this->Galeri_model->getGInternal();
+      //PAGINATION
+
+      $config['base_url'] = 'http://localhost/RA-Bahrul-Ulum/admingaleri/galeriinternal';
+
+      $config['total_rows'] = $this->Galeri_model->countAllInternal();
+      $config['per_page'] = 12;
+
+
+      //styling
+      $config['full_tag_open'] = '<nav><ul class="pagination justify-content-center">';
+      $config['full_tag_close'] = '</ul></nav>';
+
+      $config['first_link'] = 'First';
+      $config['first_tag_open'] = '<li class="page-item">';
+      $config['first_tag_close'] = '</a></li>';
+
+      $config['last_link'] = 'Last';
+      $config['last_tag_open'] = '<li class="page-item">';
+      $config['last_tag_close'] = '</a></li>';
+
+      $config['next_link'] = '&raquo';
+      $config['next_tag_open'] = '<li class="page-item">';
+      $config['next_tag_close'] = '</a></li>';
+
+      $config['prev_link'] = '&laquo';
+      $config['prev_tag_open'] = '<li class="page-item">';
+      $config['prev_tag_close'] = '</a></li>';
+
+      $config['cur_tag_open'] = '<li class="page-item active"><a class="page-link" href="#">';
+      $config['cur_tag_close'] = '</a></li>';
+
+      $config['num_tag_open'] = '<li class="page-item">';
+      $config['num_tag_close'] = '</a></li>';
+
+      $config['attributes'] = ['class' => 'page-link'];
+
+      //initialize
+      $this->pagination->initialize($config);
+
+      $data['start'] = $this->uri->segment(3);
+      $data['galeri'] = $this->Galeri_model->getInternal($config['per_page'], $data['start']);
 
       $this->load->view('templates/header-admin', $data);
       $this->load->view('templates/sidebar-admin', $data);
@@ -155,7 +199,47 @@ class Admingaleri extends CI_Controller
       $data['title'] = 'Galeri Kegiatan Eksternal';
       $data['user'] = $this->db->get_where('table_user', ['email' => $this->session->userdata('email')])->row_array();
 
-      $data['galeri'] = $this->Galeri_model->getGEksternal();
+      //PAGINATION
+
+      $config['base_url'] = 'http://localhost/RA-Bahrul-Ulum/admingaleri/galerieksternal';
+
+      $config['total_rows'] = $this->Galeri_model->countAllEksternal();
+      $config['per_page'] = 12;
+
+
+      //styling
+      $config['full_tag_open'] = '<nav><ul class="pagination justify-content-center">';
+      $config['full_tag_close'] = '</ul></nav>';
+
+      $config['first_link'] = 'First';
+      $config['first_tag_open'] = '<li class="page-item">';
+      $config['first_tag_close'] = '</a></li>';
+
+      $config['last_link'] = 'Last';
+      $config['last_tag_open'] = '<li class="page-item">';
+      $config['last_tag_close'] = '</a></li>';
+
+      $config['next_link'] = '&raquo';
+      $config['next_tag_open'] = '<li class="page-item">';
+      $config['next_tag_close'] = '</a></li>';
+
+      $config['prev_link'] = '&laquo';
+      $config['prev_tag_open'] = '<li class="page-item">';
+      $config['prev_tag_close'] = '</a></li>';
+
+      $config['cur_tag_open'] = '<li class="page-item active"><a class="page-link" href="#">';
+      $config['cur_tag_close'] = '</a></li>';
+
+      $config['num_tag_open'] = '<li class="page-item">';
+      $config['num_tag_close'] = '</a></li>';
+
+      $config['attributes'] = ['class' => 'page-link'];
+
+      //initialize
+      $this->pagination->initialize($config);
+
+      $data['start'] = $this->uri->segment(3);
+      $data['galeri'] = $this->Galeri_model->getEksternal($config['per_page'], $data['start']);
 
       $this->load->view('templates/header-admin', $data);
       $this->load->view('templates/sidebar-admin', $data);

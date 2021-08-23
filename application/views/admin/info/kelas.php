@@ -68,7 +68,10 @@
             <div class="form-group row">
                <label for="kelas" class="col-sm-3 col-form-label">Kelas</label>
                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="kelas" name="kelas">
+                  <select id="kelas" name="kelas" class="form-control">
+                     <option value="Kelas A">Kelas A</option>
+                     <option value="Kelas B">Kelas B</option>
+                  </select>
                </div>
             </div>
             <div class="form-group row">

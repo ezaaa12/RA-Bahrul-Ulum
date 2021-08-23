@@ -34,7 +34,7 @@
                   <!-- Nested Row within Card Body -->
                   <div class="row">
                      <div class="col-lg-6 d-none d-lg-block">
-                        <img src="<?= base_url('assets/img/profile/tujuan.png'); ?>" style="width: 400px; height:400px;">
+                        <img src="<?= base_url('assets/img/profile/tujuan.png'); ?>" style="width: 400px; height:350px;">
                      </div>
                      <div class="col-lg-6">
                         <div class="p-5">
@@ -58,9 +58,6 @@
                               </button>
                            </form>
                            <hr>
-                           <div class="text-center">
-                              <a class="small" href="forgot-password.html" style="color: #00bfa5;">Lupa Kata Sandi?</a>
-                           </div>
                         </div>
                      </div>
                   </div>

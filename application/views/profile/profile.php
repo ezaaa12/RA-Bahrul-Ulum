@@ -3,7 +3,7 @@
    <div class="container" style="width:100%">
       <div class="row">
          <div class="col m6 s12 center">
-            <div class="fotoprofil"><img style="width: 400px;"  src="<?= base_url('assets/img/galeri/pelatihanguru2.png') ?>" alt="" width="300" class="center"></div>
+            <div class="fotoprofil"><img style="width: 400px;"  src="<?= base_url('assets/img/galeri/eksternal/pelatihanguru2.png') ?>" alt="" width="300" class="center"></div>
          </div>
          <div class="col m6 s12">
             <div class="judul-sejarah">

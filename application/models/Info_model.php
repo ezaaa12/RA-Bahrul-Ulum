@@ -62,6 +62,16 @@ class Info_model extends CI_Model
       return $this->db->get_where('table_fasilitas', ['id' => $id])->row_array();
    }
 
+   public function getFasilitas($limit, $start)
+   {
+      return $this->db->get('table_fasilitas', $limit, $start)->result_array();
+   }
+
+   public function countAllFasilitas()
+   {
+      return $this->db->get('table_fasilitas')->num_rows();
+   }
+
    //Fasilitas permainan
    public function getDataPermainan()
    {

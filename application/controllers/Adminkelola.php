@@ -45,7 +45,7 @@ class Adminkelola extends CI_Controller
    public function hapusadmin($id)
    {
       $this->Admin_model->hapusDataAdmin($id);
-      $this->session->set_flashdata('message', '<div class="alert alert-success col-lg-6" role="alert">
+      $this->session->set_flashdata('message', '<div class="alert alert-danger col-lg-6" role="alert">
                 Data admin berhasil dihapus!
                </div>');
       redirect('adminkelola/kelolaadmin');

@@ -31,4 +31,10 @@ class Video_model extends CI_Model
       $this->db->where('id', $this->input->post('id'));
       $this->db->update('table_video', $data);
    }
+
+   //buat dashboard
+   public function getAllDataVideo()
+   {
+      return $this->db->get('table_video')->num_rows();
+   }
 }

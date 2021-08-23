@@ -44,7 +44,8 @@
          <?php $i++; ?>
       <?php endforeach; ?>
    </div>
-
+   <br>
+   <?= $this->pagination->create_links(); ?>
 
 </div>
 <!-- /.container-fluid -->

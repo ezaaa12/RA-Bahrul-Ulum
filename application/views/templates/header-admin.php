@@ -21,6 +21,9 @@
    <!-- CSS -->
    <link rel="stylesheet" href="<?= base_url('assets/css/admin.css'); ?>">
 
+   <!-- Datepicker -->
+   <link rel="stylesheet" href="<?= base_url('assets/bootstrap-datepicker/css/bootstrap-datepicker.min.css'); ?>">
+
 </head>
 
 <body id="page-top">

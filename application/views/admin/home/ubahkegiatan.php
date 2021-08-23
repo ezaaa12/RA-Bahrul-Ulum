@@ -19,7 +19,7 @@
             <div class="form-group row">
                <label for="tanggal" class="col-sm-2 col-form-label">Tanggal</label>
                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="tanggal" name="tanggal" value="<?= $kegiatan['tanggal']; ?>">
+                  <input type="text" class="form-control datepicker" id="tanggal" name="tanggal" value="<?= $kegiatan['tanggal']; ?>">
                </div>
             </div>
 

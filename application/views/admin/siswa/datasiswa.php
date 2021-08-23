@@ -38,8 +38,6 @@
                      <th scope="col">Nama</th>
                      <th scope="col">TTL</th>
                      <th scope="col">Jenis Kelamin</th>
-                     <th scope="col">Kelompok</th>
-                     <th scope="col">Status</th>
                      <th scope="col">Alamat</th>
                      <th scope="col">Nama Ayah</th>
                      <th scope="col">Nama Ibu</th>
@@ -61,17 +59,15 @@
                      <tr>
                         <th scope="row"><?= ++$start; ?></th>
                         <td><?= $sw['nama']; ?></td>
-                        <td><?= $sw['ttl']; ?></td>
+                        <td><?= $sw['tempat']; ?>, <?= $sw['ttl']; ?></td>
                         <td><?= $sw['jk']; ?></td>
-                        <td><?= $sw['kelompok']; ?></td>
-                        <td><?= $sw['status']; ?></td>
                         <td><?= $sw['alamat']; ?></td>
                         <td><?= $sw['ayah']; ?></td>
                         <td><?= $sw['ibu']; ?></td>
                         <td><?= $sw['thnajaran']; ?></td>
                         <td>
-                           <a href="<?= base_url('admindtsiswa/ubahdatasiswa/') . $sw['id']; ?>" class=" btn btn-success"><i class="far fa-edit"></i></a>
-                           <a href="<?= base_url('admindtsiswa/hapusdatasiswa/') . $sw['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')" style="margin-top: 10px;"><i class="far fa-trash-alt"></i></a>
+                           <a href="<?= base_url('admindtsiswa/ubahdatasiswa/') . $sw['id']; ?>" class=" btn btn-success" style="width: 40px; height:40px; margin-bottom:3px;"><i class="far fa-edit"></i></a>
+                           <a href="<?= base_url('admindtsiswa/hapusdatasiswa/') . $sw['id']; ?>" class=" btn btn-danger" onclick="return confirm('hapus?')" style="width: 40px; height:40px;"><i class="far fa-trash-alt"></i></a>
                         </td>
                      </tr>
                   <?php endforeach; ?>
@@ -100,31 +96,51 @@
             <form action="<?= base_url('admindtsiswa/tambahdatasiswa'); ?>" method="post">
                <div class="modal-body">
                   <div class="form-group">
-                     <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Siswa">
+                     <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Siswa" autocomplete="off">
+                  </div>
+                  <div class="form-group row">
+                     <div class="col-sm-6">
+                        <input type="text" class="form-control" id="tempat" name="tempat" placeholder="Tempat Lahir">
+                     </div>
+                     <div class="col-sm-6">
+                        <input type="text" class="form-control datepicker" id="ttl" name="ttl" placeholder="Tanggal Lahir" autocomplete="off">
+                     </div>
+                  </div>
+                  <fieldset class="form-group row">
+                     <legend class="col-form-label col-sm-2 float-sm-left pt-0">Jenis Kelamin</legend>
+                     <div class="col-sm-10">
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="jk" id="jk" value="Laki-laki">
+                           <label class="form-check-label" for="jk">
+                              Laki-Laki
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="jk" id="jk" value="Perempuan">
+                           <label class="form-check-label" for="jk">
+                              Perempuan
+                           </label>
+                        </div>
+                  </fieldset>
+
+                  <div class="form-group">
+                     <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat" autocomplete="off">
                   </div>
                   <div class="form-group">
-                     <input type="text" class="form-control" id="ttl" name="ttl" placeholder="Tempat Tanggal Lahir">
+                     <input type="text" class="form-control" id="ayah" name="ayah" placeholder="Nama Ayah" autocomplete="off">
                   </div>
                   <div class="form-group">
-                     <input type="text" class="form-control" id="jk" name="jk" placeholder="Jenis Kelamin">
+                     <input type="text" class="form-control" id="ibu" name="ibu" placeholder="Nama Ibu" autocomplete="off">
                   </div>
+
                   <div class="form-group">
-                     <input type="text" class="form-control" id="kelompok" name="kelompok" placeholder="Kelompok">
-                  </div>
-                  <div class="form-group">
-                     <input type="text" class="form-control" id="status" name="status" placeholder="Status">
-                  </div>
-                  <div class="form-group">
-                     <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat">
-                  </div>
-                  <div class="form-group">
-                     <input type="text" class="form-control" id="ayah" name="ayah" placeholder="Nama Ayah">
-                  </div>
-                  <div class="form-group">
-                     <input type="text" class="form-control" id="ibu" name="ibu" placeholder="Nama Ibu">
-                  </div>
-                  <div class="form-group">
-                     <input type="text" class="form-control" id="thnajaran" name="thnajaran" placeholder="Tahun Ajaran">
+                     <label for="thnajaran">Tahun Ajaran</label>
+                     <select id="thnajaran" name="thnajaran" class="form-control">
+                        <option selected>Pilih Tahun Ajaran</option>
+                        <?php foreach ($thnajaran as $thn) : ?>
+                           <option value="<?= $thn['thnajaran']; ?>"><?= $thn['thnajaran']; ?></option>
+                        <?php endforeach; ?>
+                     </select>
                   </div>
                </div>
                <div class="modal-footer">

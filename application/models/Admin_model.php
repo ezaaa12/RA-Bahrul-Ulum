@@ -30,4 +30,10 @@ class Admin_model extends CI_Model
       $this->db->where('id', $this->input->post('id'));
       $this->db->update('table_user', $data);
    }
+
+   //buat dashboard
+   public function getAllDataAdmin()
+   {
+      return $this->db->get('table_user')->num_rows();
+   }
 }

@@ -110,4 +110,10 @@ class Profil_model extends CI_Model
    {
       return $this->db->get_where('table_dataguru', ['id' => $id])->row_array();
    }
+
+   //buat dashboard
+   public function getAllDataGuru()
+   {
+      return $this->db->get('table_dataguru')->num_rows();
+   }
 }

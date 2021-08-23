@@ -9,11 +9,11 @@ class Admindtsiswa extends CI_Controller
       $this->load->model('Dtsiswa_model');
    }
 
-   //galeri internal
    public function index()
    {
       $data['title'] = 'Data Siswa';
       $data['user'] = $this->db->get_where('table_user', ['email' => $this->session->userdata('email')])->row_array();
+      $data['thnajaran'] = $this->Dtsiswa_model->getTahunAjaran();
 
       //Pagination
       $this->load->library('pagination');
@@ -30,10 +30,9 @@ class Admindtsiswa extends CI_Controller
       $config['base_url'] = 'http://localhost/RA-Bahrul-Ulum/admindtsiswa/index';
 
       $this->db->like('nama', $data['keyword']);
+      $this->db->or_like('tempat', $data['keyword']);
       $this->db->or_like('ttl', $data['keyword']);
       $this->db->or_like('jk', $data['keyword']);
-      $this->db->or_like('kelompok', $data['keyword']);
-      $this->db->or_like('status', $data['keyword']);
       $this->db->or_like('alamat', $data['keyword']);
       $this->db->or_like('thnajaran', $data['keyword']);
       $this->db->from('table_datasiswa');
@@ -88,6 +87,8 @@ class Admindtsiswa extends CI_Controller
       $data['title'] = 'Data Siswa';
       $data['user'] = $this->db->get_where('table_user', ['email' => $this->session->userdata('email')])->row_array();
 
+
+
       //Pagination
       $this->load->library('pagination');
 
@@ -132,12 +133,10 @@ class Admindtsiswa extends CI_Controller
       $data['start'] = $this->uri->segment(3);
       $data['siswa'] = $this->Dtsiswa_model->getSiswa($config['per_page'], $data['start']);
 
-
       $this->form_validation->set_rules('nama', 'Nama', 'required');
-      $this->form_validation->set_rules('ttl', 'TTL', 'required');
+      $this->form_validation->set_rules('tempat', 'Tempat Lahir', 'required');
+      $this->form_validation->set_rules('ttl', 'Tanggal Lahir', 'required');
       $this->form_validation->set_rules('jk', 'Jenis Kelamin', 'required');
-      $this->form_validation->set_rules('kelompok', 'Kelompok', 'required');
-      $this->form_validation->set_rules('status', 'Status', 'required');
       $this->form_validation->set_rules('alamat', 'Alamat', 'required');
       $this->form_validation->set_rules('ayah', 'Ayah', 'required');
       $this->form_validation->set_rules('ibu', 'Ibu', 'required');
@@ -152,10 +151,9 @@ class Admindtsiswa extends CI_Controller
       } else {
          $data = [
             'nama' => $this->input->post('nama', true),
+            'tempat' => $this->input->post('tempat', true),
             'ttl' => $this->input->post('ttl', true),
             'jk' => $this->input->post('jk', true),
-            'kelompok' => $this->input->post('kelompok', true),
-            'status' => $this->input->post('status', true),
             'alamat' => $this->input->post('alamat', true),
             'ayah' => $this->input->post('ayah', true),
             'ibu' => $this->input->post('ibu', true),
@@ -184,12 +182,12 @@ class Admindtsiswa extends CI_Controller
       $data['user'] = $this->db->get_where('table_user', ['email' => $this->session->userdata('email')])->row_array();
 
       $data['siswa'] = $this->Dtsiswa_model->getSiswaById($id);
+      $data['thnajaran'] = $this->Dtsiswa_model->getTahunAjaran();
+      $data['jk'] = ['Laki-laki', 'Perempuan'];
 
       $this->form_validation->set_rules('nama', 'Nama', 'required');
       $this->form_validation->set_rules('ttl', 'TTL', 'required');
       $this->form_validation->set_rules('jk', 'Jenis Kelamin', 'required');
-      $this->form_validation->set_rules('kelompok', 'Kelompok', 'required');
-      $this->form_validation->set_rules('status', 'Status', 'required');
       $this->form_validation->set_rules('alamat', 'Alamat', 'required');
       $this->form_validation->set_rules('ayah', 'Ayah', 'required');
       $this->form_validation->set_rules('ibu', 'Ibu', 'required');
