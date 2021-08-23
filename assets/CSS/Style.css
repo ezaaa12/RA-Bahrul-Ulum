@@ -1,139 +1,141 @@
 /* HEADER */
 .nav-wrapper ul a {
-   text-decoration: none;
+	text-decoration: none;
 }
 .sidenav li a {
-   text-decoration: none;
+	text-decoration: none;
 }
-
 
 /* Navbar */
- .brand-logo img {
-   width: 110px;
-   height: 110px;
-   margin-top: -25px;
+.brand-logo img {
+	width: 110px;
+	height: 110px;
+	margin-top: -25px;
 }
 .fitur {
-   font-family: 'Poppins';
+	font-family: "Poppins";
 }
 
 .judulnav {
-   font-size: 24px;
-   margin-left: 100px;
-   font-family: 'Sulphur Point';
-   font-weight: 700;
+	font-size: 24px;
+	font-family: "Sulphur Point";
+	font-weight: 700;
+	color: white;
 }
 
 
 /* Sidenav */
 .sidenav {
-   font-family: 'Poppins';
+	font-family: "Poppins";
 }
 /* END HEADER */
 
-
 /* HOME */
 /* Slider */
-.slider h3, .slider h5{
-   text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+.slider h3,
+.slider h5 {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .slider h3 {
-   margin-top: 100px;
-   font-family: 'Fredoka One';
+	margin-top: 100px;
+	font-family: "Fredoka One";
+	color: #009688 !important;
 }
 
-.slider h5{
-   font-family: 'Caveat';
-   font-size: 40px;
+.slider h5 {
+	font-family: "Caveat";
+	font-size: 40px;
 }
 
 .slider ul li img {
-   filter: brightness(60%);
+	filter: brightness(60%);
 }
 
 .slider h3 {
-   font-size: 50px;
-   font-weight: bold;
+	font-size: 50px;
+	font-weight: bold;
 }
 
 /* Foto2 kegiatan sekolah */
-.judul{
-   margin-top: 55px;
-   margin-bottom: 30px;
-   font-family: 'Sulphur Point';
-   font-size: 30px;
+.judul {
+	margin-top: 55px;
+	margin-bottom: 30px;
+	font-family: "Sulphur Point";
+	font-size: 30px;
 }
 
 .judul h5 {
-   text-align: center;
+	text-align: center;
 }
 
 .judul hr {
-   border-top: solid #009688 3px;
-   border-radius: 50px;
+	border-top: solid #009688 3px;
+	border-radius: 50px;
 }
 
-.card1 h5{
-   color: #009688;
-   font-size: 18px;
-   font-family: 'Poppins';
-   margin-top: -5px;
+.card1 h5 {
+	color: #009688;
+	font-size: 18px;
+	font-family: "Poppins";
+	margin-top: -5px;
 }
 
-.card1 p{
-   font-family: 'Poppins';
-   font-size: 13px;
-   color: #666666;
-   margin-top: -5px;
+.card1 p {
+	font-family: "Poppins";
+	font-size: 13px;
+	color: #666666;
+	margin-top: -5px;
 }
 
 /* Sambutan kepala sekolah */
 .parallax-container {
-   height: 600px;
+	height: 600px;
 }
 
 .parallax-container img {
-   filter: opacity(70%);
-   width: 800px;
+	filter: opacity(70%);
+	width: 800px;
 }
 
 .container-sambutan h3 {
-   font-size: 30px;
-   font-family: 'Sulphur Point';
-   font-weight: bold;
+	font-size: 30px;
+	font-family: "Sulphur Point";
+	font-weight: bold;
+	margin-top: 20px !important;
 }
 
 .container-sambutan .container {
-   text-align: left;
-   font-family: 'Poppins';
-   margin-top: 20px;
-   line-height: 25px;
+	text-align: left;
+	font-family: "Poppins";
+	margin-top: 20px;
+	line-height: 25px;
 }
 
-.sekolah, .kepsek {
-   font-weight: bold;
+.sekolah,
+.kepsek {
+	font-weight: bold;
 }
 
-.sekolah{
-   margin-top: 20px;
+.sekolah {
+	margin-top: 20px;
 }
-
 
 /* Galeri */
 .gl {
-   height: 85px;
-   padding: 2px;
-   font-family: 'Sulphur Point';
-   margin-bottom: 40px;
-   margin-top: -33px;
+	height: 85px;
+	padding: 2px;
+	font-family: "Sulphur Point";
+	margin-bottom: 40px;
+	margin-top: -33px;
 }
 
 .galeri h3 {
-   font-family: 'Sulphur Point';
-   font-size: 30px;
-   margin-bottom: 20px !important;
-   font-weight: 400;
+	font-family: "Sulphur Point";
+	font-size: 30px;
+	margin-bottom: 20px !important;
+	font-weight: 400;
+	margin-top: 20px !important;
 }
 
 /* .galeri .row img:hover {
@@ -152,177 +154,176 @@
 
 /* END HOME */
 
-
 /* PROFILE */
 /* Profil sekolah */
-.sejarah .fotoprofil img{
-   margin-top: 9rem !important;
-   border-radius: 20px;
-   filter: drop-shadow(0px 0px 2px black);
+.sejarah .fotoprofil img {
+	margin-top: 9rem !important;
+	border-radius: 20px;
+	filter: drop-shadow(0px 0px 2px black);
 }
 
-.judul-sejarah h4{
-   font-family: 'Sulphur Point';
-   font-size: 30px;
+.judul-sejarah h4 {
+	font-family: "Sulphur Point";
+	font-size: 30px;
 }
 
-.judul-sejarah h5{
-   font-family: 'Sulphur Point';
-   font-size: 30px;
-   margin-top: -20px;
+.judul-sejarah h5 {
+	font-family: "Sulphur Point";
+	font-size: 30px;
+	margin-top: -20px;
 }
 
-.judul-sejarah hr{
-  border-top: solid #009688 3px;
-   border-radius: 50px;
-   width: 50%;
-   margin: 15px auto;
+.judul-sejarah hr {
+	border-top: solid #009688 3px;
+	border-radius: 50px;
+	width: 50%;
+	margin: 15px auto;
 }
 
 .content p {
-   font-family: 'Poppins';
-   font-size: 14px;
-   text-align:justify;
-   line-height: 25px;
+	font-family: "Poppins";
+	font-size: 14px;
+	text-align: justify;
+	line-height: 25px;
 }
 
 /* Visi Misi Sekolah */
 .card .visi .jdl,
 .card .jdl {
-   font-family: 'Poppins';
-   font-size: 20px;
-   color: #00bfa5;
+	font-family: "Poppins";
+	font-size: 20px;
+	color: #00bfa5;
 }
 
 .card .visi p {
-   font-family: 'Caveat';
-   font-size: 18px;
+	font-family: "Caveat";
+	font-size: 18px;
 }
 
 .card ul {
-   font-family: 'Caveat';
-   font-size: 20px;
-   margin-top: -20px;
+	font-family: "Caveat";
+	font-size: 20px;
+	margin-top: -20px;
 }
 
 /* Tujuan Sekolah */
 .ktujuan {
-   height: 85px;
-   padding: 2px;
-   font-family: 'Sulphur Point';
-   margin-bottom: 40px;
-   margin-top: -40px;
+	height: 85px;
+	padding: 2px;
+	font-family: "Sulphur Point";
+	margin-bottom: 40px;
+	margin-top: -40px;
 }
 
 .ktujuan h3 {
-   font-size: 30px;
-   margin-bottom: 20px !important;
+	font-size: 30px;
+	margin-bottom: 20px !important;
 }
 
-
 .tujuan h4 {
-   font-family: 'Sulphur Point';
-   font-size: 30px;
+	font-family: "Sulphur Point";
+	font-size: 30px;
 }
 
 .tujuan ol li {
-   font-family: 'Poppins';
-   font-size: 15px;
-   line-height: 30px;
+	font-family: "Poppins";
+	font-size: 15px;
+	line-height: 30px;
 }
 
-
 /* Profil Guru2 */
-.judulguru{
-   margin-top: 55px;
-   margin-bottom: 30px;
-   font-family: 'Sulphur Point';
-   font-size: 30px;
+.judulguru {
+	margin-top: 55px;
+	margin-bottom: 30px;
+	font-family: "Sulphur Point";
+	font-size: 30px;
 }
 
 .judulguru h5 {
-   text-align: center;
+	text-align: center;
 }
 
 .judulguru hr {
-   border-top: solid #009688 3px;
-   border-radius: 50px;
-   width: 50%;
-   margin: 0 auto;
+	border-top: solid #009688 3px;
+	border-radius: 50px;
+	width: 50%;
+	margin: 0 auto;
 }
 
 .bioguru {
-   margin-top: -50px;
-   padding: 2rem 1rem;
+	margin-top: -50px;
+	padding: 2rem 1rem;
 }
 
 .bioguru h3 {
-   font-family: 'Sulphur Point';
-   font-size: 30px;
-   margin-top: 10px;
+	font-family: "Sulphur Point";
+	font-size: 30px;
+	margin-top: 10px;
 }
 
-.biodata-guru{
-   margin-top: 40px;
+.biodata-guru {
+	margin-top: 40px;
 }
 
-.biodata-guru h6{
-   font-family: 'Poppins';
-   font-size: 18px;
+.biodata-guru h6 {
+	font-family: "Poppins";
+	font-size: 18px;
 }
 
 .biodata-guru p {
-   font-size: 13px;
-   font-family: 'Poppins';
-   color: #666666;  
+	font-size: 13px;
+	font-family: "Poppins";
+	color: #666666;
 }
 
 /* INFO KELAS */
-.infokelas h4{
-   margin-top: 40px;
+.infokelas h4 {
+	margin-top: 40px;
 }
 
-.infokelas h4,h5 {
-   font-family: 'Sulphur Point';
+.infokelas h4,
+h5 {
+	font-family: "Sulphur Point";
 }
 
 .infokelas h5 {
-   text-transform : capitalize;
+	text-transform: capitalize;
 }
 
 .infokelas hr {
-   border-top: solid #009688 3px;
-   border-radius: 50px;
+	border-top: solid #009688 3px;
+	border-radius: 50px;
 }
 
 .infokelas .row {
-   padding-top: 20px;
+	padding-top: 20px;
 }
 
 /* Kegiatan Sekolah */
 .keg {
-   margin-top: 40px;
+	margin-top: 40px;
 }
 
 .kegiatan hr {
-  border-top: solid #009688 3px;
-  border-radius: 50px;
+	border-top: solid #009688 3px;
+	border-radius: 50px;
 }
 
 .kegiatan h4 {
-   margin-top: 30px;
+	margin-top: 30px;
 }
 
-.kegiatan h4,h5 {
-   font-family: 'Sulphur Point';
+.kegiatan h4,
+h5 {
+	font-family: "Sulphur Point";
 }
 
 .kegiatan img {
-   width: 50%;
+	width: 50%;
 }
 
 .kegiatan .row .card1 img:hover {
-   animation: animasizoom 2s ease;
+	animation: animasizoom 2s ease;
 }
 
 /* @keyframes animasizoom {
@@ -338,129 +339,129 @@
 /* Kurikulum */
 
 .kurikulum {
-   height: 600px;
+	height: 600px;
 }
 
 .kurikulum .parallax img {
-   filter: brightness(60%) ;
+	filter: brightness(60%);
 }
 
 .kurikulum h3 {
-   font-family: 'Sulphur Point';
-   font-weight: bold;
-   text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+	font-family: "Sulphur Point";
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-.kurikulum .kotak img{
-   width: 10%;
-   filter: brightness(100%);
-   padding-bottom: 10px;
+.kurikulum .kotak img {
+	width: 10%;
+	filter: brightness(100%);
+	padding-bottom: 10px;
 }
 
 /* Fasilitas */
 .fasilitas {
-   height: 85px;
-   font-family: 'Sulphur Point';
+	height: 85px;
+	font-family: "Sulphur Point";
 }
 
 .fasilitas h3 {
-   font-size: 30px;
-   margin-bottom: 20px !important;
+	font-size: 30px;
+	margin-top: 20px !important;
 }
 
 .kolam h5 {
-   margin-top: 30px;
-   font-size: 30px;
+	margin-top: 30px;
+	font-size: 30px;
 }
 
 .swiper-container {
-   width: 100%;
-   padding-top: 20px;
-   padding-bottom: 50px;
- }
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
 
- .swiper-slide {
-   background-position: center;
-   background-size: cover;
-   width: 300px;
-   height: 300px;
- }
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
 
- .swiper-slide img {
-   display: block;
-   width: 100%;
- }
+.swiper-slide img {
+	display: block;
+	width: 100%;
+}
 
- .pagi2 {
-    padding-bottom: 20px;
- }
+.pagi2 {
+	padding-bottom: 20px;
+}
 
 /* Prestasi */
 section .fres {
-   padding-top: 50px;
+	padding-top: 50px;
 }
 
 .prestasi {
-   font-family: 'Sulphur Point';
+	font-family: "Sulphur Point";
 }
 
 .prestasi ol {
-   font-family: 'Nunito';
-   font-size: 17px;
+	font-family: "Nunito";
+	font-size: 17px;
 }
-.prestasi img{
-   width: 85%;
+.prestasi img {
+	width: 85%;
+}
+
+.prestasi .kanan {
+	margin-top: 50px !important;
 }
 
 /* Video Pembelajaran */
 .pembelajaran h3 {
-   font-family: 'Poppins';
-   font-weight: 500;
-   font-size : 30px;
-   padding-top: 20px;
+	font-family: "Poppins";
+	font-weight: 500;
+	font-size: 30px;
+	padding-top: 20px;
 }
 
 .pembelajaran .garis {
-   width: 20%;
-   margin: 0 auto;
-   margin-bottom: 20px;
-   border-radius: 50px;
-   border-top: solid #009688 3px;
-   
+	width: 20%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-radius: 50px;
+	border-top: solid #009688 3px;
 }
 
 .cardpembelajaran {
-   padding-top: 25px;
+	padding-top: 25px;
 }
 
-.cardpembelajaran .card-content h5{
-   font-family: 'Poppins';
-   font-weight: 600;
-   font-size: 30px;
+.cardpembelajaran .card-content h5 {
+	font-family: "Poppins";
+	font-weight: 600;
+	font-size: 30px;
 }
-
 
 /* footer */
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
-
-   .content ul a:hover {
-     color: blue !important;
-  }
-
-  footer {
-     font-family: 'Nunito';
-  }
-  
-  footer .footer-copyrigth {
-   font-family: 'Nunito' !important;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
- 
+main {
+	flex: 1 0 auto;
+}
+
+.content ul a:hover {
+	color: blue !important;
+}
+
+footer {
+	font-family: "Nunito";
+}
+
+footer .footer-copyrigth {
+	font-family: "Nunito" !important;
+}

@@ -11,7 +11,7 @@ class Home extends CI_Controller
    public function index()
    {
 
-      $data['judul'] = 'Menu';
+      $data['judul'] = 'Beranda';
       $data['sambutan'] = $this->Home_model->getDataSambutan();
       $data['kegiatan'] = $this->Home_model->getDataKegiatan();
       $data['gambar'] = $this->Home_model->getDataGaleri();
