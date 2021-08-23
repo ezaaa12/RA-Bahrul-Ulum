@@ -74,38 +74,40 @@
       <h3 class=" white-text center">Sarana & Fasilitas</h3>
    </div>
 
-   <section class="fass">
-      <div class="container kolam">
-         <h5 class="center">Fasilitas Sekolah</h5>
-         <!-- Swiper -->
-         <div class="swiper-container mySwiper">
-            <div class="swiper-wrapper">
-               <?php foreach ($fasilitas as $f) : ?>
-                  <div class="swiper-slide">
-                     <img src="<?= base_url('assets/img/info/fasilitassekolah/') . $f['gambar']; ?>" />
-                  </div>
-               <?php endforeach; ?>
-            </div>
-            <div class="swiper-pagination"></div>
-         </div>
-      </div>
+    <!-- Galeri Kegiatan -->
+    <div class="popular-location galerikegiatan ">
+        <div class="row galeribu center">
+        </div>
 
-      <div class="container kolam">
-         <h5 class="center">Fasilitas Permainan</h5>
-         <!-- Swiper -->
-         <div class="swiper-container mySwiper">
-            <div class="swiper-wrapper">
-               <?php foreach ($permainan as $p) : ?>
-                  <div class="swiper-slide">
-                     <img src="<?= base_url('assets/img/info/fasilitaspermainan/') . $p['gambar']; ?>" />
-                  </div>
-               <?php endforeach; ?>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-location mb-30">
+                        <div class="location-img">
+                            <img src="<?= base_url('assets/img/galeri/internal/mewarnai3.png'); ?>" alt="">
+                        </div>
+                        <div class="location-details">
+                            <p>Fasilitas Sekolah</p>
+                            <a href="<?= base_url('subindex') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="single-location mb-30">
+                        <div class="location-img">
+                            <img src="<?= base_url('assets/img/galeri/eksternal/psa1.png') ?>">
+                        </div>
+                        <div class="location-details">
+                            <p>Fasilitas Permainan</p>
+                            <a href="<?= base_url('faspermainan') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-pagination pagi2"></div>
-         </div>
-      </div>
-   </section>
-   <!-- End -->
+        </div>
+    </div>
+    <!-- End -->
 
    <!-- Prestasi -->
    <div class="contaiter teal accent-4 fasilitas">

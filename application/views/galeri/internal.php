@@ -129,6 +129,20 @@
 
    <!-- End -->
 
+   <!-- Pagination -->
+<div class="container">
+   <ul class="pagination">
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      <li class="active"><a href="#!">1</a></li>
+      <li class="waves-effect"><a href="#!">2</a></li>
+      <li class="waves-effect"><a href="#!">3</a></li>
+      <li class="waves-effect"><a href="#!">4</a></li>
+      <li class="waves-effect"><a href="#!">5</a></li>
+      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+   </ul>
+</div>   
+<!-- Akhir Pagination -->
+
    <!-- footer -->
    <footer class="teal accent-4">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">

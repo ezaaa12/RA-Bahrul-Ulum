@@ -66,7 +66,7 @@
 <!-- Tujuan -->
 <section id="tjn" class="tjn grey lighten-3 keg">
    <div class="contaiter teal accent-4 ktujuan">
-      <h3 class=" white-text center">Tujuan Sekolah</h3>
+      <h3 class=" white-text center mt-4">Tujuan Sekolah</h3>
    </div>
 
    <div class="container">
