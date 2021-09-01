@@ -61,13 +61,13 @@
                     <div class="col m12 s12">
                         <div class="nav-wrapper">
                             <a href="<?= base_url('home'); ?>" class="brand-logo">
-                                <img src="<?= base_url('assets/img/Logo.png'); ?>" class="navbar">
+                                <img src="<?= base_url('assets/img/Logo.png'); ?>" class="navbar d-none d-sm-block">
                             </a>
                             <span class="judulnav center">RA Bahrul Ulum</span>
 
                             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                             <ul class="fitur right hide-on-med-and-down">
-                                <li><a href="<?= base_url('home'); ?>">Home</a></li>
+                                <li><a href="<?= base_url('home'); ?>">Beranda</a></li>
                                 <li><a href="<?= base_url('profile'); ?>">Profil</a></li>
                                 <li><a href="<?= base_url('info'); ?>">Info</a></li>
                                 <li><a href="<?= base_url('vpembelajaran'); ?>">Video Pembelajaran</a></li>
@@ -82,7 +82,7 @@
 
     <!-- sidenav -->
     <ul class="sidenav" id="mobile-nav">
-        <li><a href="<?= base_url('home'); ?>">Home</a></li>
+        <li><a href="<?= base_url('home'); ?>">Beranda</a></li>
         <li><a href="<?= base_url('profile'); ?>">Profil</a></li>
         <li><a href="<?= base_url('info'); ?>">Info</a></li>
         <li><a href="<?= base_url('vpembelajaran'); ?>">Video Pembelajaran</a></li>
@@ -153,7 +153,7 @@
                 <div class="col-md-4">
                     <ul>
                         <h5 class="white-text">Menu</h5>
-                        <li><a href="<?= base_url('home'); ?>" class="white-text" style="text-decoration: none;">Home</a></li>
+                        <li><a href="<?= base_url('home'); ?>" class="white-text" style="text-decoration: none;">Beranda</a></li>
                         <li><a href="<?= base_url('profile'); ?>" class="white-text" style="text-decoration: none;">Profil</a></li>
                         <li><a href="<?= base_url('info'); ?>" class="white-text" style="text-decoration: none;">Info</a></li>
                         <li><a href="<?= base_url('vpembelajaran'); ?>" class="white-text" style="text-decoration: none;">Video Pembelajaran</a></li>

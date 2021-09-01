@@ -83,6 +83,16 @@ class Info_model extends CI_Model
       return $this->db->get_where('table_fpermainan', ['id' => $id])->row_array();
    }
 
+   public function countAllPermainan()
+   {
+      return $this->db->get('table_fpermainan')->num_rows();
+   }
+
+   public function getPermainan($limit, $start)
+   {
+      return $this->db->get('table_fpermainan', $limit, $start)->result_array();
+   }
+
 
 
    // PRESTASI

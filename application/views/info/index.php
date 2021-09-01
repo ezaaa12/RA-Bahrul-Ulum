@@ -30,7 +30,7 @@
          <hr>
          <div class="row center">
             <?php foreach ($kegiatan as $kg) : ?>
-               <div class="col-sm-3 center">
+               <div class="col-6 col-sm-3 center">
                   <div class="card-panel white">
                      <span class="grey-text text-lighten-2"> <img src="<?= base_url('assets/img/info/kegiatan/') . $kg['gambar']; ?>">
                      </span>
@@ -59,7 +59,7 @@
                   <img src="<?= base_url('assets/img/info/kurikulum/study.png') ?>" class="responsive-img icon">
                   <h5>
                      <?php foreach ($kurikulum as $k) : ?>
-                        <p>"<?= $k['kurikulum']; ?>"</p>
+                        "<?= $k['kurikulum']; ?>"</p>
                      <?php endforeach; ?>
                   </h5>
                </div>
@@ -74,40 +74,40 @@
       <h3 class=" white-text center">Sarana & Fasilitas</h3>
    </div>
 
-    <!-- Galeri Kegiatan -->
-    <div class="popular-location galerikegiatan ">
-        <div class="row galeribu center">
-        </div>
+   <!-- Galeri Kegiatan -->
+   <div class="popular-location galerikegiatan ">
+      <div class="row galeribu center">
+      </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="single-location mb-30">
-                        <div class="location-img">
-                            <img src="<?= base_url('assets/img/galeri/internal/mewarnai3.png'); ?>" alt="">
-                        </div>
-                        <div class="location-details">
-                            <p>Fasilitas Sekolah</p>
-                            <a href="<?= base_url('subindex') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="single-location mb-30">
-                        <div class="location-img">
-                            <img src="<?= base_url('assets/img/galeri/eksternal/psa1.png') ?>">
-                        </div>
-                        <div class="location-details">
-                            <p>Fasilitas Permainan</p>
-                            <a href="<?= base_url('faspermainan') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+               <div class="single-location mb-30">
+                  <div class="location-img">
+                     <img src="<?= base_url('assets/img/info/fasilitassekolah/ruangan3.png'); ?>" alt="">
+                  </div>
+                  <div class="location-details">
+                     <p>Fasilitas Sekolah</p>
+                     <a href="<?= base_url('Info/fasilitas') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- End -->
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+               <div class="single-location mb-30">
+                  <div class="location-img">
+                     <img src="<?= base_url('assets/img/info/fasilitaspermainan/bola.jpg') ?>">
+                  </div>
+                  <div class="location-details">
+                     <p>Fasilitas Permainan</p>
+                     <a href="<?= base_url('Info/permainan') ?>" class="location-btn teal white-text">Detail Kegiatan</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- End -->
 
    <!-- Prestasi -->
    <div class="contaiter teal accent-4 fasilitas">
@@ -122,11 +122,11 @@
             </div>
             <div class="col m6 s6 kanan">
                <h4>Prestasi RA Bahrul Ulum</h4>
-               <ol>
+               <ul>
                   <?php foreach ($prestasi as $ps) : ?>
-                     <li><?= $ps['prestasi']; ?></li>
+                     <li>"<?= $ps['prestasi']; ?>"</li>
                   <?php endforeach; ?>
-               </ol>
+               </ul>
             </div>
          </div>
       </div>

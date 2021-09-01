@@ -10,6 +10,11 @@ class Video_model extends CI_Model
       return $this->db->get('table_video')->result_array();
    }
 
+   public function getVideo($limit, $start)
+   {
+      return $this->db->get('table_video', $limit, $start)->result_array();
+   }
+
    public function getVideoById($id)
    {
       return $this->db->get_where('table_video', ['id' => $id])->row_array();

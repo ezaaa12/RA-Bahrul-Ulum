@@ -38,9 +38,12 @@
 }
 
 .slider h3 {
+	font-size: 50px;
+	font-weight: bold;
 	margin-top: 100px;
 	font-family: "Fredoka One";
 	color: #009688 !important;
+	text-shadow: 1px 1px 3px rgb(254, 255, 255);
 }
 
 .slider h5 {
@@ -49,12 +52,7 @@
 }
 
 .slider ul li img {
-	filter: brightness(60%);
-}
-
-.slider h3 {
-	font-size: 50px;
-	font-weight: bold;
+	filter: brightness(40%);
 }
 
 /* Foto2 kegiatan sekolah */
@@ -138,20 +136,6 @@
 	margin-top: 20px !important;
 }
 
-/* .galeri .row img:hover {
-   animation: zoomgambar 2s ease;
-}
-
-@keyframes zommgambar {
-   0% {
-      width: 437px;
-   }
-
-   30% {
-      width: 460px;
-   }
-} */
-
 /* END HOME */
 
 /* PROFILE */
@@ -196,14 +180,9 @@
 }
 
 .card .visi p {
-	font-family: "Caveat";
-	font-size: 18px;
-}
-
-.card ul {
-	font-family: "Caveat";
-	font-size: 20px;
-	margin-top: -20px;
+	font-family: "Poppins";
+	color: #000000;
+	font-size: 16px;
 }
 
 /* Tujuan Sekolah */
@@ -225,7 +204,7 @@
 	font-size: 30px;
 }
 
-.tujuan ol li {
+.tujuan ul li {
 	font-family: "Poppins";
 	font-size: 15px;
 	line-height: 30px;
@@ -266,6 +245,7 @@
 }
 
 .biodata-guru h6 {
+	margin-top: 10px;
 	font-family: "Poppins";
 	font-size: 18px;
 }
@@ -326,16 +306,6 @@ h5 {
 	animation: animasizoom 2s ease;
 }
 
-/* @keyframes animasizoom {
-   0% {
-      width: 437px;
-   }
-
-   30% {
-      width: 500px;
-   }
-} */
-
 /* Kurikulum */
 
 .kurikulum {
@@ -351,6 +321,7 @@ h5 {
 	font-weight: bold;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
+
 
 .kurikulum .kotak img {
 	width: 10%;
@@ -405,7 +376,7 @@ section .fres {
 	font-family: "Sulphur Point";
 }
 
-.prestasi ol {
+.prestasi ul {
 	font-family: "Nunito";
 	font-size: 17px;
 }

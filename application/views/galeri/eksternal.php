@@ -61,13 +61,13 @@
                <div class="col m12 s12">
                   <div class="nav-wrapper">
                      <a href="<?= base_url('home'); ?>" class="brand-logo">
-                        <img src="<?= base_url('assets/img/Logo.png'); ?>" class="navbar">
+                        <img src="<?= base_url('assets/img/Logo.png'); ?>" class="navbar d-none d-sm-block">
                      </a>
                      <span class="judulnav center">RA Bahrul Ulum</span>
 
                      <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                      <ul class="fitur right hide-on-med-and-down">
-                        <li><a href="<?= base_url('home'); ?>">Home</a></li>
+                        <li><a href="<?= base_url('home'); ?>">Beranda</a></li>
                         <li><a href="<?= base_url('profile'); ?>">Profil</a></li>
                         <li><a href="<?= base_url('info'); ?>">Info</a></li>
                         <li><a href="<?= base_url('vpembelajaran'); ?>">Video Pembelajaran</a></li>
@@ -82,7 +82,7 @@
 
    <!-- sidenav -->
    <ul class="sidenav" id="mobile-nav">
-      <li><a href="<?= base_url('home'); ?>">Home</a></li>
+      <li><a href="<?= base_url('home'); ?>">Beranda</a></li>
       <li><a href="<?= base_url('profile'); ?>">Profil</a></li>
       <li><a href="<?= base_url('info'); ?>">Info</a></li>
       <li><a href="<?= base_url('vpembelajaran'); ?>">Video Pembelajaran</a></li>
@@ -103,7 +103,7 @@
                <div class="wrapper">
                   <div class="gallery">
                      <?php foreach ($galeri as $gl) : ?>
-                        <div class="image"><span><img src="<?= base_url('assets/img/galeri/') . $gl['gambar']; ?>"></span></div>
+                        <div class="image"><span><img src="<?= base_url('assets/img/galeri/eksternal/') . $gl['gambar']; ?>"></span></div>
                      <?php endforeach; ?>
                   </div>
                </div>
@@ -119,6 +119,13 @@
                   </div>
                </div>
                <div class="shadow"></div>
+               <div class="pagination justify-content-center" style="padding: 20px;">
+                  <div class="row">
+                     <div class="col-s12">
+                        <?= $this->pagination->create_links(); ?>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
@@ -126,20 +133,6 @@
 
 
    <!-- End -->
-
-     <!-- Pagination -->
-<div class="container">
-   <ul class="pagination">
-      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-      <li class="active"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      <li class="waves-effect"><a href="#!">5</a></li>
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-   </ul>
-</div>   
-<!-- Akhir Pagination -->
 
    <!-- footer -->
    <footer class="teal accent-4">
@@ -164,7 +157,7 @@
             <div class="col-md-4">
                <ul>
                   <h5 class="white-text">Menu</h5>
-                  <li><a href="<?= base_url('home'); ?>" class="white-text" style="text-decoration: none;">Home</a></li>
+                  <li><a href="<?= base_url('home'); ?>" class="white-text" style="text-decoration: none;">Beranda</a></li>
                   <li><a href="<?= base_url('profile'); ?>" class="white-text" style="text-decoration: none;">Profil</a></li>
                   <li><a href="<?= base_url('info'); ?>" class="white-text" style="text-decoration: none;">Info</a></li>
                   <li><a href="<?= base_url('vpembelajaran'); ?>" class="white-text" style="text-decoration: none;">Video Pembelajaran</a></li>

@@ -21,7 +21,7 @@
               <div class="col-md-4">
                   <ul>
                       <h5 class="white-text">Menu</h5>
-                      <li><a href="<?= base_url('home'); ?>" class="white-text" style="text-decoration: none;">Home</a></li>
+                      <li><a href="<?= base_url('home'); ?>" class="white-text" style="text-decoration: none;">Beranda</a></li>
                       <li><a href="<?= base_url('profile'); ?>" class="white-text" style="text-decoration: none;">Profil</a></li>
                       <li><a href="<?= base_url('info'); ?>" class="white-text" style="text-decoration: none;">Info</a></li>
                       <li><a href="<?= base_url('vpembelajaran'); ?>" class="white-text" style="text-decoration: none;">Video Pembelajaran</a></li>

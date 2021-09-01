@@ -22,7 +22,7 @@
                   </div>
                </div>
                <div class="card-content">
-                  <h5><?= $v['tittle']; ?></h5>
+                  <h5 style="font-size: 20px;"><?= $v['tittle']; ?></h5>
                </div>
                <div class="card-action">
                   <a href="<?= $v['link']; ?>" class="waves-effect waves-light btn teal" target="_blank">Lihat Di YouTube</a>
@@ -31,19 +31,12 @@
          </div>
       <?php endforeach; ?>
    </div>
+   <div class="pagination justify-content-center" style="padding: 20px;">
+      <div class="row">
+         <div class="col-s12">
+            <?= $this->pagination->create_links(); ?>
+         </div>
+      </div>
+   </div>
 </div>
 <!-- End -->
-
-<!-- Pagination -->
-<div class="container">
-   <ul class="pagination">
-      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-      <li class="active"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      <li class="waves-effect"><a href="#!">5</a></li>
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-   </ul>
-</div>   
-<!-- Akhir Pagination -->

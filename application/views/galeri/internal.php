@@ -61,13 +61,13 @@
                <div class="col m12 s12">
                   <div class="nav-wrapper">
                      <a href="<?= base_url('home'); ?>" class="brand-logo">
-                        <img src="<?= base_url('assets/img/Logo.png'); ?>" class="navbar">
+                        <img src="<?= base_url('assets/img/Logo.png'); ?>" class="navbar d-none d-sm-block">
                      </a>
                      <span class="judulnav center">RA Bahrul Ulum</span>
 
                      <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                      <ul class="fitur right hide-on-med-and-down">
-                        <li><a href="<?= base_url('home'); ?>">Home</a></li>
+                        <li><a href="<?= base_url('home'); ?>">Beranda</a></li>
                         <li><a href="<?= base_url('profile'); ?>">Profil</a></li>
                         <li><a href="<?= base_url('info'); ?>">Info</a></li>
                         <li><a href="<?= base_url('vpembelajaran'); ?>">Video Pembelajaran</a></li>
@@ -82,7 +82,7 @@
 
    <!-- sidenav -->
    <ul class="sidenav" id="mobile-nav">
-      <li><a href="<?= base_url('home'); ?>">Home</a></li>
+      <li><a href="<?= base_url('home'); ?>">Beranda</a></li>
       <li><a href="<?= base_url('profile'); ?>">Profil</a></li>
       <li><a href="<?= base_url('info'); ?>">Info</a></li>
       <li><a href="<?= base_url('vpembelajaran'); ?>">Video Pembelajaran</a></li>
@@ -107,7 +107,6 @@
                      <?php endforeach; ?>
                   </div>
                </div>
-
                <div class="preview-box">
                   <div class="details">
                      <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
@@ -120,6 +119,13 @@
                   </div>
                </div>
                <div class="shadow"></div>
+               <div class="pagination justify-content-center" style="padding: 20px;">
+                  <div class="row">
+                     <div class="col-s12">
+                        <?= $this->pagination->create_links(); ?>
+                     </div>
+                  </div>
+               </div>
             </div>
 
          </div>
@@ -129,22 +135,8 @@
 
    <!-- End -->
 
-   <!-- Pagination -->
-<div class="container">
-   <ul class="pagination">
-      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-      <li class="active"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      <li class="waves-effect"><a href="#!">5</a></li>
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-   </ul>
-</div>   
-<!-- Akhir Pagination -->
-
    <!-- footer -->
-   <footer class="teal accent-4">
+   <footer class=" teal accent-4">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
          <path fill="#ffffff" fill-opacity="1" d="M0,128L48,106.7C96,85,192,43,288,69.3C384,96,480,192,576,197.3C672,203,768,117,864,96C960,75,1056,117,1152,117.3C1248,117,1344,75,1392,53.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
          </path>
@@ -166,7 +158,7 @@
             <div class="col-md-4">
                <ul>
                   <h5 class="white-text">Menu</h5>
-                  <li><a href="<?= base_url('home'); ?>" class="white-text" style="text-decoration: none;">Home</a></li>
+                  <li><a href="<?= base_url('home'); ?>" class="white-text" style="text-decoration: none;">Beranda</a></li>
                   <li><a href="<?= base_url('profile'); ?>" class="white-text" style="text-decoration: none;">Profil</a></li>
                   <li><a href="<?= base_url('info'); ?>" class="white-text" style="text-decoration: none;">Info</a></li>
                   <li><a href="<?= base_url('vpembelajaran'); ?>" class="white-text" style="text-decoration: none;">Video Pembelajaran</a></li>

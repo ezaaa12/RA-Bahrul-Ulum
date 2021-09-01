@@ -3,7 +3,7 @@
    <div class="container" style="width:100%">
       <div class="row">
          <div class="col m6 s12 center">
-            <div class="fotoprofil"><img style="width: 400px;"  src="<?= base_url('assets/img/galeri/eksternal/pelatihanguru2.png') ?>" alt="" width="300" class="center"></div>
+            <div class="fotoprofil"><img style="width: 375px;" src="<?= base_url('assets/img/galeri/eksternal/pelatihanguru2.png') ?>" alt="" width="300" class="center"></div>
          </div>
          <div class="col m6 s12">
             <div class="judul-sejarah">
@@ -16,8 +16,8 @@
                   <p><?= $p['profil']; ?></p>
                <?php endforeach; ?>
             </div>
-         </div>   
-      </div>     
+         </div>
+      </div>
    </div>
 </section>
 
@@ -77,11 +77,11 @@
 
          <div class="col-lg-6">
             <h4>Tujuan Sekolah RA Bahrul Ulum</h4>
-            <ol>
+            <ul>
                <?php foreach ($tujuan as $t) : ?>
-                  <li><?= $t['tujuan']; ?></li>
+                  <li>"<?= $t['tujuan']; ?>"</li>
                <?php endforeach; ?>
-            </ol>
+            </ul>
          </div>
       </div>
    </div>
@@ -97,7 +97,7 @@
    <div class="container">
       <div class="row biodata-guru">
          <?php foreach ($dataguru as $dg) : ?>
-            <div class="col-sm-4 center guru">
+            <div class="col-6 col-sm-4 center guru">
                <img src="<?= base_url('assets/img/profile/guru/') ?><?= $dg['gambar']; ?>" width="120" class="rounded-circle">
                <h6><?= $dg['nama']; ?></h6>
                <p><?= $dg['jabatan']; ?></p>
